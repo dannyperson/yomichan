@@ -20,7 +20,7 @@
 window.displayWindow = new class extends Display {
     constructor() {
         super($('#spinner'), $('#content'));
-        $('#search').click(this.onSearch.bind(this));
+        $('#search').click(this.onSearch.bind(this).get(0));
         window.wanakana.bind($('#query'));
     }
 
